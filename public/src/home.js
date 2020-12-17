@@ -36,11 +36,11 @@ function mostCommonGenres(books) {
 }
 //should return an ordered list of most popular books---should limit the list to the top five
 function mostPopularBooks(books) {
-  let book = helperForPopBook(books);
+  let book = helperForBook(books);
   return book;
 }
 
-function helperForPopBook(books) {
+function helperForBook(books) {
   let objArr = [];
   for (let keyB in books) {
     const popular = books[keyB].borrows.length;
